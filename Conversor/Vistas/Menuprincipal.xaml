@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Vistas.Menuprincipal"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="CadetBlue">
+        <Label Text="Conversor"
+               FontSize="Large"
+               FontAttributes="Bold"
+               Margin="0,20,0,0"
+               HorizontalOptions="Center" />
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="40,20"
+               CornerRadius="20"
+               HasShadow="False">
+            <StackLayout VerticalOptions="Center"
+                         Spacing="20">
+                <Image Source="dados.png" />
+                <Label Text="(cm) a (m)"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalOptions="Center" />
+                <Button Text="Iniciar"
+                        TextTransform="None"
+                        BackgroundColor="AntiqueWhite"
+                        CornerRadius="10"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        x:Name="btniniciar"
+                        Clicked="btniniciar_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
